@@ -1,0 +1,48 @@
+.task-control {
+    position: relative;
+
+
+    .add-to-card-txt {
+        margin-top: 0;
+        color: #5e6c84;
+        font-size: rem(12px);
+        font-weight: 600;
+        margin-bottom: -4px;
+        margin-block-start: 1em;
+    }
+
+    .suggested-settings {
+        color: #5e6c84;
+        font-size: rem(12px);
+        font-weight: 600;
+    }
+
+    .action-btn {
+        background-color: #091e420a;
+        color: #172b4d;
+        padding: 12px 6px;
+        margin-top: 8px;
+        width: rem(168px);
+        height: rem(32px);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+            background-color: #091e4214;
+        }
+
+        &:active {
+            background-color: #e4f0f6;
+            color: #0079bf;
+        }
+    }
+
+    .action-span {
+        padding-left: 5px;
+        font-size: rem(14px);
+        font-weight: 400;
+        line-height: lh(20px);
+    }
+}

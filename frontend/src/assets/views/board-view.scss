@@ -1,0 +1,124 @@
+.main-board-preview {
+  // overflow-x: scroll;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  // overflow: hidden;
+  position: relative;
+
+  .black-screen {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: aquamarine;
+    position: absolute;
+    background-color: #000000a3;
+    // overflow-y: auto;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+
+    // overflow-y: scroll;
+  }
+}
+
+.board-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1;
+  height: 100%;
+  // height: 100vh;
+  // padding-top: 44px;
+  // overflow-x: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 8px;
+
+  .board-canvas {
+    // overflow: hidden;
+    // width: 100%;
+    //   overflow-x: auto;
+    flex: 1;
+
+    .board-fixed-container {
+      width: 100%;
+      overflow-x: auto;
+      height: 100%;
+
+      .smooth-dnd-container {
+        height: 100%;
+
+        .smooth-dnd-draggable-wrapper {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+.board-fixed-container::-webkit-scrollbar {
+  height: rem(12px);
+  width: rem(12px);
+}
+
+.board-fixed-container::-webkit-scrollbar-button {
+  display: block;
+  height: rem(4px);
+  width: rem(4px);
+}
+
+.board-fixed-container::-webkit-scrollbar-track-piece {
+  background: #091e4214;
+  border-radius: rem(10px);
+}
+
+.board-fixed-container::-webkit-scrollbar-track {
+  background: #091e4214;
+  border-radius: rem(10px);
+}
+
+.board-fixed-container::-webkit-scrollbar-thumb {
+  background: #cdcdcd7c;
+  border-radius: rem(10px);
+}
+
+.add-new-group {
+  height: fit-content;
+
+  & .btn-add-group {
+    padding: 11px 8px;
+    margin-inline-start: .25rem;
+    background-color: #ffffff3d;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+
+    transition: background-color 85ms ease-in;
+    color: white;
+    width: 250px;
+    text-align: start;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    background-color: #ffffff52;
+  }
+
+  & form {
+    padding-inline: .5rem;
+
+    & input {
+      margin-block: .5rem;
+    }
+  }
+}
+

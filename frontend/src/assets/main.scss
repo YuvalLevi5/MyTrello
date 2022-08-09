@@ -1,0 +1,44 @@
+// SETUP
+
+// BASICS
+@import 'basics/helpers';
+@import 'basics/functions';
+
+// @import './cmps/task-details';
+// @import './cmps/task-details';
+
+// CMPS
+@import './cmps/home-view'; // V
+@import './cmps/app-header'; // V
+@import './cmps/popup'; // V
+@import './cmps/group-preview'; // V
+@import './cmps/group-actions-modal.scss'; // V
+@import './cmps/task-preview'; // V
+@import './views/board-view.scss'; // V
+@import './cmps/board-list'; // V
+@import './cmps/quick-edit'; // V
+@import './cmps/board-header'; // V
+
+@import './cmps/task-screen'; // V
+@import './cmps/task-control'; // V
+@import './cmps/task-duedate'; // V
+@import './cmps/task-checklist'; // V
+@import './cmps/task-description'; // V
+@import './cmps/task-labels'; // V
+@import './cmps/task-attachement'; // V
+@import './cmps/task-member'; // V
+@import './cmps/popup-task-label'; // V
+@import './cmps/popup-task-checklist'; // V
+@import './cmps/popup-task-cover'; // V
+@import './cmps/popup-task-duedate'; // V
+@import './cmps/popup-task-member'; // V
+@import './cmps/popup-task-attachment'; // V
+@import './cmps/board-menu.scss'; // V
+@import './cmps/popup-add-board'; // V
+@import './cmps/home-header'; // V
+
+#app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

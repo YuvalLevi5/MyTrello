@@ -1,0 +1,75 @@
+.quick-edit {
+  display: flex;
+  // position: fixed;
+  z-index: 30;
+  // margin-right: 10px;
+  height: fit-content;
+  overflow: visible;
+  border-radius: 3px;
+
+  button {
+    border: none;
+    border-radius: 0.1875em;
+  }
+
+  .card-editor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75em;
+    width: 16rem;
+
+    button {
+      background-color: #0079bf;
+      color: white;
+      padding: 6px 24px 6px 24px;
+      transition: 85ms;
+
+      &:hover {
+        background-color: #026aa7;
+      }
+    }
+
+    .card-details {
+      background-color: white;
+      border-radius: 0.1875em;
+      padding: 10px;
+      width: rem(264px);
+
+      textarea {
+        overflow: hidden;
+        min-height: 5.625rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        resize: none;
+      }
+    }
+  }
+
+  .quick-card-editor-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    // width: fit-content;
+
+    button {
+      width: fit-content;
+      color: #e6e6e6;
+      background-color: #0009;
+      margin: 0 0 4px 8px;
+      padding: 6px 12px 6px 8px;
+      transition: transform 85ms ease-in;
+      white-space: nowrap;
+      text-align: left;
+
+      &:hover {
+        background-color: #000c;
+        color: white;
+        transform: translateX(0.3125em);
+      }
+    }
+  }
+}
+
+// }

@@ -1,0 +1,145 @@
+.task-description {
+    width: 100%;
+    padding-left: 44px;
+    margin-bottom: 10px;
+
+    .description-textarea-edit {
+        border: none;
+        resize: none;
+        cursor: text;
+        display: flex;
+        width: 100%;
+
+        background-color: inherit;
+        border-radius: 3px;
+        min-height: rem(40px);
+
+        &:focus {
+            padding: 8px 12px;
+            outline: none;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            resize: none;
+            height: rem(108px);
+            background: #fff;
+            box-shadow: none;
+            min-height: rem(108px);
+            // border-color: #0079bf;
+            box-shadow: inset 0 0 0 2px #0079bf;
+            margin-bottom: 4px;
+            width: 100%;
+        }
+    }
+
+    .description-textarea {
+        border: none;
+        resize: none;
+        cursor: text;
+        display: flex;
+        // height: 62px;
+        // line-height: 20px;
+        padding: 6px 8px 2px 8px;
+        width: 100%;
+
+        background-color: #091e420a;
+        border-radius: 3px;
+        min-height: 40px;
+        padding: 8px 12px;
+
+        &:focus {
+            outline: none;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            resize: none;
+            height: 108px;
+            background: #fff;
+            box-shadow: none;
+            min-height: 108px;
+            // border-color: #0079bf;
+            box-shadow: inset 0 0 0 2px #0079bf;
+            margin-bottom: 4px;
+            width: 100%;
+        }
+    }
+
+    .description-header {
+        padding: 8px 0;
+        margin-bottom: 4px;
+    }
+
+    .desc-title {
+        font-size: 16px;
+        line-height: 20px;
+        display: inline-block;
+        margin: 0;
+        min-height: 18px;
+        min-width: 40px;
+        width: auto;
+        font-weight: 600;
+    }
+
+    .desc-svg {
+        width: 24px;
+        height: 24px;
+        left: -40px;
+        position: absolute;
+    }
+
+    .add-description {
+        background-color: #0079bf;
+        border: none;
+        box-shadow: none;
+        color: #fff;
+        align-items: center;
+        border-radius: 3px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        justify-content: center;
+        line-height: 20px;
+        padding: 6px 12px;
+        text-decoration: none;
+        transition-duration: 85ms;
+        transition-property: background-color, border-color, box-shadow;
+        transition-timing-function: ease;
+        white-space: normal;
+
+        &:hover {
+            background-color: #026aa7;
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    .cancel-add-description {
+        background-color: initial;
+        border: none;
+        box-shadow: none;
+        cursor: pointer;
+        align-items: center;
+        border-radius: 3px;
+        box-sizing: border-box;
+        color: #172b4d;
+        display: inline-flex;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        justify-content: center;
+        line-height: 20px;
+        padding: 6px 12px;
+        text-decoration: none;
+        transition-duration: 85ms;
+        transition-property: background-color, border-color, box-shadow;
+        transition-timing-function: ease;
+        white-space: normal;
+
+        &:hover {
+            background-color: #091e4214;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}

@@ -1,0 +1,238 @@
+.popup-label {
+    width: rem(304px);
+
+    .label {
+        margin: 0 0 4px;
+
+    }
+
+    .label-main {
+        width: 100%;
+        cursor: pointer;
+        // padding: 6px 12px;
+        border-radius: 3px;
+
+    }
+
+    .label-title {
+        font-size: rem(14px);
+        font-weight: 700;
+        padding: 6px 0px 0px 12px;
+
+        min-height: rem(34px);
+        position: relative;
+        transition: padding 85ms, margin 85ms, box-shadow 85ms;
+        color: #fff;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+            margin-left: 4px
+        }
+    }
+
+    .edit-svg {
+        cursor: pointer;
+        height: rem(20px);
+        width: rem(20px);
+        border-radius: 3px;
+        padding: 3px;
+
+        &:hover {
+            background-color: #091e4214;
+        }
+    }
+
+    .create-new-label-btn {
+        width: 100%;
+        -webkit-appearance: none;
+        border: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: lh(20px);
+        margin-bottom: 8px;
+        padding: 6px 12px;
+        position: relative;
+        text-decoration: none;
+        background-color: #091e420a;
+        box-shadow: none;
+        cursor: pointer;
+        font-weight: 400;
+        margin: 8px 4px 0 0;
+        text-align: center;
+        color: #172b4d;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: rem(14px);
+        text-transform: none;
+
+        &:hover {
+            background-color: #091e4214;
+            border: none;
+            box-shadow: none;
+        }
+
+    }
+}
+
+.label-edit-popup {
+    .colors {
+        display: grid;
+        gap: 6px;
+        // padding: 4px;
+        // margin: 0 -4px;
+        // overflow-x: hidden;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        .color {
+            margin: 0;
+            border-radius: 3px;
+            height: 72px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: none;
+            // width: 50px;
+            height: 32px;
+            cursor: pointer;
+            -webkit-appearance: none;
+            border: none;
+            border-radius: 3px;
+            box-sizing: border-box;
+            display: inline-block;
+            line-height: lh(20px);
+            margin-bottom: 8px;
+            padding: 6px 12px;
+            position: relative;
+            text-decoration: none;
+        }
+
+    }
+
+
+    .edit-label-title {
+        color: #5e6c84;
+        display: block;
+        font-size: rem(12px);
+        font-weight: 700;
+        line-height: lh(16px);
+        margin-bottom: 4px;
+    }
+
+    .title-m {
+        margin-top: 10px;
+    }
+
+    .add-label-btn {
+        background-color: #0079bf;
+        border: none;
+        box-shadow: none;
+        color: #fff;
+        align-items: center;
+        border-radius: 3px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: rem(14px);
+        font-weight: 400;
+        justify-content: center;
+        line-height: lh(20px);
+        padding: 6px 24px;
+        text-decoration: none;
+        transition-duration: 85ms;
+        transition-property: background-color, border-color, box-shadow;
+        transition-timing-function: ease;
+        white-space: normal;
+
+        &:hover {
+            background-color: #026aa7;
+            border: none;
+            box-shadow: none;
+        }
+
+    }
+
+    .delete-label-btn {
+        background-color: #b04632;
+        border: none;
+        box-shadow: none;
+        color: #fff;
+        align-items: center;
+        border-radius: 3px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: rem(14px);
+        font-weight: 400;
+        justify-content: center;
+        line-height: lh(20px);
+        padding: 6px 12px;
+        text-decoration: none;
+        transition-duration: 85ms;
+        transition-property: background-color, border-color, box-shadow;
+        transition-timing-function: ease;
+        white-space: normal;
+
+        &:hover {
+            background-color: #933b27;
+            border: none;
+            box-shadow: none;
+            color: #fff;
+        }
+    }
+
+    .edit-label-actions {
+        margin-top: 0.5em;
+    }
+}
+
+// DELETE LABEL POPUP
+.delete-label-popup {
+    .info-delete {
+        color: #172b4d;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: rem(14px);
+        font-weight: 400;
+        line-height: lh(20px);
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .delete-label-btn {
+        background-color: #b04632;
+        border: none;
+        box-shadow: none;
+        color: #fff;
+        align-items: center;
+        border-radius: 3px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: rem(14px);
+        font-weight: 400;
+        justify-content: center;
+        line-height: lh(20px);
+        padding: 6px 12px;
+        text-decoration: none;
+        transition-duration: 85ms;
+        transition-property: background-color, border-color, box-shadow;
+        transition-timing-function: ease;
+        white-space: normal;
+        width: 100%;
+
+        &:hover {
+            background-color: #933b27;
+            border: none;
+            box-shadow: none;
+            color: #fff;
+        }
+    }
+}

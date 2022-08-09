@@ -1,0 +1,159 @@
+.popup-cover {
+
+    .colors {
+        display: grid;
+        gap: 8px;
+        padding: 4px;
+        margin: 0 -4px;
+        overflow-x: hidden;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        .color {
+            margin: 0;
+            border-radius: 3px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: none;
+            width: rem(50px);
+            height: rem(32px);
+            cursor: pointer;
+            -webkit-appearance: none;
+            border: none;
+            border-radius: 3px;
+            box-sizing: border-box;
+            display: inline-block;
+            line-height: lh(20px);
+            margin-bottom: 8px;
+            padding: 6px 12px;
+            position: relative;
+            text-decoration: none;
+        }
+
+    }
+
+    .attachments-images {
+        display: grid;
+        grid-template-columns: repeat(3, 88px);
+        gap: 5px;
+
+        >* {
+            margin: 0;
+            //   width: 88px;
+            height: rem(50px);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat
+        }
+    }
+
+    .unsplash {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 88px);
+        gap: 5px;
+
+        img {
+            width: rem(88px);
+            height: rem(48px);
+            border-radius: 3px;
+        }
+    }
+
+    .remove-cover-btn {
+        width: 100%;
+        -webkit-appearance: none;
+        border: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: lh(20px);
+        margin-bottom: 8px;
+        padding: 6px 12px;
+        position: relative;
+        text-decoration: none;
+        background-color: #091e420a;
+        box-shadow: none;
+        cursor: pointer;
+        font-weight: 400;
+        margin: 8px 4px 0 0;
+        text-align: center;
+        color: #172b4d;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: rem(14px);
+        text-transform: none;
+
+        &:hover {
+            background-color: #091e4214;
+            border: none;
+            box-shadow: none;
+        }
+
+    }
+
+    .size-section {
+        .size-container {
+          position: relative;
+          height: 56px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 5px;
+          > button {
+            position: relative;
+            border-radius: 3px;
+            padding: 0;
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            object-fit: cover;
+            .over {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.9) 10%,
+                rgba(255, 255, 255, 0.7) 35%,
+                rgba(255, 255, 255, 0) 65%
+              );
+            }
+            .demmy {
+              position: absolute;
+              background: lightblue;
+              border-radius: 3px;
+              height: 4px;
+              margin: 4px 3%;
+              &.title {
+                top: 62%;
+                width: 90%;
+              }
+              &.text {
+                top: 75%;
+                width: 80%;
+              }
+            }
+            .color,
+            img {
+              object-fit: cover;
+              object-position: center;
+              &.full {
+                width: 100%;
+                height: 100%;
+                border-radius: 3px;
+              }
+              &.split {
+                border-radius: 3px 3px 0 0;
+                width: 100%;
+                height: 60%;
+              }
+            }
+            &.active {
+              box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0079bf;
+            }
+          }
+        }
+      }
+}

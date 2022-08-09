@@ -1,0 +1,33 @@
+.popup-member {
+
+    .search-member {
+        margin-bottom: 20px;
+    }
+
+    .member-details {
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 0px;
+        // justify-content: space-between;
+        align-items: center;
+
+        .member-initials {
+            margin-inline-end: 10px;
+            ;
+        }
+
+        .member-name {
+            flex-grow: 1;
+            margin-left: 8px;
+        }
+
+        &.member-selected::after {
+            content: "✔";
+            font-size: 1rem;
+        }
+
+        &:hover {
+            background-color: rgb(245, 245, 245);
+        }
+    }
+}

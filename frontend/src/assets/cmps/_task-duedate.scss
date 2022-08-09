@@ -1,0 +1,69 @@
+.task-duedate {
+    padding-left: 44px;
+
+    .task-info-headline {
+        color: #5e6c84;
+        display: block;
+        font-size: rem(12px);
+        font-weight: 600;
+        // line-height: 16px;
+        line-height: lh(20px);
+        margin: 0 8px 4px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .task-checkbox {
+        height: rem(16px);
+        width: rem(16px);
+
+        &:hover {
+            background-color: #091e4214;
+        }
+
+        &:active {
+            background-color: #e4f0f6;
+            color: #0079bf;
+        }
+    }
+
+    .date {
+
+        position: relative;
+
+        .task-text-details {
+            color: #172b4d;
+            font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            font-size: rem(14px);
+            line-height: lh(20px);
+            font-weight: 400;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 6px 12px;
+            text-decoration: none;
+            white-space: normal;
+            background-color: rgba(9, 30, 66, 0.04);
+            box-shadow: none;
+            border: none;
+            transition-property: background-color, border-color, box-shadow;
+            transition-duration: 85ms;
+            transition-timing-function: ease;
+
+        }
+    }
+
+    .task-complete {
+        color: #FFFFFF;
+        background-color: #61BD4F;
+        font-size: rem(12px);
+        line-height: lh(16px);
+        padding: 0 4px;
+        border-radius: 2px;
+        margin: auto 0 auto 8px;
+    }
+}

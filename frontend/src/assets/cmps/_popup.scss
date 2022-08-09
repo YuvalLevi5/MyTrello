@@ -1,0 +1,112 @@
+.popup {
+    // width: 304px;
+    position: absolute;
+    top: 20px;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 12px;
+    box-shadow: 0 0 12px 1px rgba(46, 46, 46, 0.25);
+    outline: none;
+    width: rem(304px);
+    right: 0;
+    top: 0;
+    // overflow: auto;
+    // overflow-y: auto;
+    // overflow-x: auto;
+
+    h2 {
+        font-size: 1.1rem;
+        flex-grow: 1;
+        text-align: center;
+        // margin-bottom: 0.5rem;
+        margin-left: 0.5em;
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 0.3em;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    input {
+        margin-bottom: 10px;
+        border: 1px solid grey;
+        border-radius: 3px;
+        width: 100%;
+        // height: 30px;
+        height: em(30px);
+        padding-left: 10px;
+        font-size: 0.95rem;
+
+        &:hover {
+            background-color: rgb(243, 243, 243);
+        }
+    }
+
+    .btn {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    .task-popup-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        padding-bottom: 0.8em;
+
+        h2 {
+            font-size: rem(14px);
+        }
+
+
+    }
+
+    main {
+        overflow-y: auto;
+    }
+
+    .colors-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: em(8px);
+        padding: 4px;
+        margin: 0 -4px;
+
+        .color-box {
+            margin: 0;
+            border-radius: 3px;
+            width: rem(50px);
+            height: rem(32px);
+            cursor: pointer;
+        }
+    }
+
+    .close-svg {
+        height: rem(20px);
+        width: rem(20px);
+        cursor: pointer;
+        color: #5e6c84;
+
+        // &:hover {
+        //     background-color: #091e4214;
+
+        // }
+    }
+}
+
+@media (max-width: 800px) {
+    .popup {
+        position: fixed;
+        top: unset;
+        right: 0;
+        bottom: 0;
+        height: unset;
+    }
+}
