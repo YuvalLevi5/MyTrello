@@ -211,7 +211,6 @@ export default {
         //     // })
 
         //     // return donesCheclists
-        //     console.log(checklist)
         //     // return checklist.todos.length
         //     return 5
         // },

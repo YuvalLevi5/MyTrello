@@ -167,63 +167,6 @@ export default {
         }
     }
 }
-//   async created() {
-//     this.boardLabels = this.$store.getters.boardLabels
-//     this.boardMembers = this.$store.getters.boardMembers
-//     const task = await boardService.getTask(this.$route.params)
-//     this.task = task
-// },
-// components: {
-//     searchListModal,
-//         checklistModal,
-//         datePicker,
-//         filePicker,
-//   },
-// methods: {
-//     deleteChecklist(clId) {
-//         const clIdx = this.task.checklists.findIndex((cl) => cl.id === clId)
-//         this.task.checklists.splice(clIdx, 1)
-//     },
-//     addChecklist(checklist) {
-//         this.task.checklists.push(checklist)
-//     },
-//     async toggleMember(member) {
-//         let updatedTask = JSON.parse(JSON.stringify(this.task))
-//         const memberIdx = updatedTask.members.findIndex(
-//             (currMember) => currMember._id === member._id
-//         )
-//         if (memberIdx === -1) {
-//             updatedTask.members.push(member)
-//         } else {
-//             updatedTask.members = updatedTask.members.filter(
-//                 (currMember) => currMember._id !== member._id
-//             )
-//         }
-//         console.log('updateTask', updatedTask)
-//         const { groupId } = this.$route.params
-//         await this.$store.dispatch({
-//             type: 'saveTask',
-//             groupId,
-//             task: updatedTask,
-//         })
-//         var newTask = await boardService.getTask(this.$route.params)
-//         console.log('newTask', newTask)
-//         this.task = newTask
-//     },
-//     setDouDate(date) {
-//         this.task.douDate = date
-//     },
-//     setAtachment(attachment) {
-//         this.task.attachments
-//             ? this.task.attachments.push(attachment)
-//             : (this.task.attachments = [attachment])
-//     },
-//     closeTaskDetails() {
-//         const { boardId } = this.$route.params
-//         this.$router.push(`/board/${boardId}`)
-//     },
-// },
-// }
 </script>
 
 <style>

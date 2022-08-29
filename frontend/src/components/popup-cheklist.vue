@@ -40,7 +40,6 @@ export default {
     },
     async created() {
         const pos = await this.$refs.popupChecklist.getBoundingClientRect()
-        console.log('pos: ' , pos)
     },
     components: { popUp },
 };

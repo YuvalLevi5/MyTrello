@@ -99,7 +99,6 @@ export default {
       this.$router.push(`/board/${this.board._id}`)
     },
     updateBoard(board) {
-      console.log('board view', board)
       // this.$store.commit({ type: 'setCurrBoard', currBoard: board })
       this.$store.dispatch({ type: 'saveBoardFromSocket', board, });
     },

@@ -39,7 +39,6 @@ export default {
         setTaskLabels({ labelIds }) {
       this.task.labelIds = labelIds;
       const task = JSON.parse(JSON.stringify(this.task))
-      console.log('task: ', task)
       this.saveTask(task);
     },
     async saveTask(task) {

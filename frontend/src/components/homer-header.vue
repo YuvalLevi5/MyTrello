@@ -10,7 +10,7 @@
                 </div>
     <!-- <div @click="this.$router.push('/')" class="home-page-home-btn" to="/">Trello</div> -->
     <div class="home-page-user-btns">
-      <a class="login-page-btn" >Log in</a>
+      <a @click="this.$router.push('/board')" class="login-page-btn" >Log in</a>
     <a  @click="this.$router.push('/board')" class="signup-page-btn" to="/board">Get Trello for free</a>
     </div>
 
@@ -18,6 +18,6 @@
 </template>
 <script>
 export default {
-    name: 'home-page-header',
+  name: 'home-page-header',
 }
 </script>

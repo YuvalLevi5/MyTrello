@@ -137,7 +137,6 @@ export default {
             this.$emit("toggle-popup", "Cover");
         },
         setCoverSize(isFull) {
-            console.log(isFull)
             this.task.style.isCover = isFull;
             this.$emit('setCoverImg', this.task)
             // this.setCover();

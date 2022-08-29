@@ -43,7 +43,6 @@ export default {
         },
         editDesc() {
             const description = this.description
-            console.log('description: ' , description)
             this.$emit("save-desc", this.description);
             this.cancelDesc()
             // this.userWantDesc = false

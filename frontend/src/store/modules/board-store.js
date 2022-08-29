@@ -65,9 +65,7 @@ export const boardStore = {
       }
     },
     async saveBoard({ commit, dispatch }, { board }) {
-      console.log('board: ' , board)
       try {
-        console.log('board: from try')
         const savedBoard = await boardService.save(board)
         // commit({ type: 'saveBoard', savedBoard })
         commit({ type: 'setCurrBoard', board: savedBoard })
@@ -77,7 +75,6 @@ export const boardStore = {
       }
     },
     async saveBoardFromSocket({ commit, dispatch }, { board }) {
-      console.log('board: ' , board)
       try {
         const savedBoard = await boardService.saveFromSocket(board)
         // commit({ type: 'saveBoard', savedBoard })
@@ -161,7 +158,6 @@ export const boardStore = {
       const board = JSON.parse(JSON.stringify(state.currBoard));
 
       board.labels = labels;
-      console.log('labels: ' , labels)
 
       try {
         await dispatch('saveBoard', { board });

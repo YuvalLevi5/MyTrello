@@ -103,8 +103,8 @@
 
         .star-icon {
           position: absolute;
-          right: 3px;
-          top: 63px;
+          right:rem(3px);
+          top: rem(63px);
           font-size: 0.75rem;
           transition: 0.15s;
 

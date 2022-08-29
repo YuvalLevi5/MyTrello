@@ -101,15 +101,12 @@ export default {
             this.saveChecklist()
         },
         addTodo() {
-            console.log(this.todo.txt)
             // this.todo.txt = val
             if (!this.todo.txt) return
             if (!this.checklist.todos) this.checklist.todos = [];
-            console.log(':hhhhhhhh ')
             this.todo.id = boardService._makeId();
             this.checklist.todos.push({ ...this.todo });
             this.saveChecklist();
-            console.log(this.checklist);
             this.todo = {
                 txt: "",
                 isDone: false,

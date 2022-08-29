@@ -61,7 +61,6 @@ export default {
                 if (!this.task.style) this.task.style = {}
                 this.task.style.bgImg = this.attachement.url
             }
-            console.log('this.task: ' , this.task)
             this.$emit('toggleCover', this.task)
         },
     },

@@ -54,7 +54,6 @@ export default {
             this._makeFileObj(res.url)
         },
         _makeFileObj(url) {
-            console.log(url)
             this.file = { id: this._makeId(), title: 'new file', url }
             this.$emit('attachFile', this.file)
         },

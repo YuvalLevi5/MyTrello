@@ -65,8 +65,16 @@
 }
 
 .board-fixed-container::-webkit-scrollbar {
-  height: rem(12px);
   width: rem(12px);
+  height: rem(12px);
+
+}
+
+@media (max-width: 800px) {
+  .board-fixed-container::-webkit-scrollbar {
+    height: rem(18px);
+
+  }
 }
 
 .board-fixed-container::-webkit-scrollbar-button {
@@ -121,4 +129,3 @@
     }
   }
 }
-
