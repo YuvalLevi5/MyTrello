@@ -74,7 +74,6 @@ export default {
   },
   data() {
     return {
-      // currBoard: null,
       isAddNewGroup: false,
       newGroup: JSON.parse(JSON.stringify(this.$store.getters.getEmptyGroup)),
       blackScreen: false,
